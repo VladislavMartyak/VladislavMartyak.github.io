@@ -52,7 +52,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 440px;
+    width: 640px;
 }
 
 
@@ -68,7 +68,7 @@ body {
 
 .navLogo{
     padding-left: 20px;
-    height: 40px;
+    height: 70px;
 }
 
 
@@ -471,13 +471,13 @@ h2{
 h3{
     font-family: GothamPro-Medium;
     text-align: center;
-   
+    padding-bottom: 20px;
     font-size: 20px;
 }
 
 h4{
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 
