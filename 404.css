@@ -12,7 +12,8 @@ canvas {
     height: 100%;
 }
 
-a {
+#creatorRef {
+    font-family: GothamPro-Medium;
     position: absolute;
     bottom: 2vmin;
     right: 2vmin;
@@ -20,10 +21,15 @@ a {
     text-decoration: none;
 }
 
-a:hover {
+#creatorRef:hover {
   color: #fff;
 }
 
-
-
+.mainLogoError {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+}
 

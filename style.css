@@ -484,6 +484,14 @@ h4{
     padding-bottom: 40px;
 }
 
+h5{
+    font-family: GothamPro-Bold;
+    text-align: center;
+    color: white;
+    padding-top: 10%;
+    font-size: 300px;
+}
+
 
 .reviewArea{
     border: 0.5px solid #dcdcdc;
