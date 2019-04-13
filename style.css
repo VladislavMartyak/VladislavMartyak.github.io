@@ -64,7 +64,7 @@
 
 .navLogo{
     padding-left: 20px;
-    height: 60px;
+    height: 40px;
 }
 
 
@@ -301,7 +301,7 @@ h1{
     padding-left: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
-    font-size: 50px;
+    font-size: 60px;
 }
 
 .requestForm {
@@ -464,6 +464,19 @@ h2{
 }
 
 
+h3{
+    font-family: GothamPro-Medium;
+    text-align: center;
+   
+    font-size: 20px;
+}
+
+h4{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
 .reviewArea{
     border: 0.5px solid #dcdcdc;
     border-radius: 0px;
@@ -486,4 +499,18 @@ h2{
     position: absolute;
     transition: opacity .5s;
 
+}
+
+
+/*----Histogram----*/
+/*=========================================================================================*/
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+#chartdiv {
+    margin: 0 auto;
+    width: 50%;
+    height: 500px;
 }
