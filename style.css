@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
 /*----Custom fonts----*/
 /*=========================================================================================*/
 
@@ -504,10 +508,6 @@ h4{
 
 /*----Histogram----*/
 /*=========================================================================================*/
-
-body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-}
 
 #chartdiv {
     margin: 0 auto;
