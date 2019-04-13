@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Order</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous"> 
+</head>
+<body>
+   <div id="navBarFixed">
+    <img class="navLogo" src="logoVM.png"/> 
+    <span onclick="openNav()"><i class="fas fa-bars" style="font-size:30px;color:black;padding-right: 25px;cursor:pointer"></i></span>
+</div>
+
+<div id="mySidenav" class="sidenav">
+   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+   <a href="index.html">OVERVIEW</a>
+   <a href="#portrait">PORTRAIT</a>
+   <a href="#lifestyle">LIFESTYLE</a>
+   <a href="#lifestyle">FASHION</a>
+   <a href="order.html">ORDER</a>
+   <a class="active" href="info.html" >INFO</a>
+</div>
+   <script src="script.js"> </script>
+    <h1>Info<br></h1>
+    <div class="requestContainer">
+    <div class="requestForm">
+       <form action="" method="get">
+        <h2>Track your order:</h2>
+        E-mail: <input type="text" class="inputField" id="fieldEmail" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.(?!ru)[a-z]{2,4}$"><br>
+        Password: <input type="password" class="inputField" id="fiedPassword" name="secondName" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*"><br>
+        <input type="submit" onClick="return empty()" class="sumbitButton" value="Track">
+        </form>
+        <br>
+        <form action="" method="get">
+        <h2>Submit your review:</h2>
+        <textarea rows="8" cols="60" class="reviewArea">This was the best photoshoot in my life! I highly recommend this photographer to anyone, who wants ideal pics and amazing atmosphere. The prints were unbelievable with such sharpness and quality. I've got what I wanted so far, thanks!
+        </textarea>
+        <input type="submit" onClick="return empty()" class="sumbitButton" value="Submit">
+        </form>
+        </div>
+    </div>
+    
+    
+    
+<div class="footer">
+   <div class="mainLine">
+    <div class="footerLinks">
+        <a class="active" href="index.html">OVERVIEW</a>
+        <a href="#portrait">PORTRAIT</a>
+        <a href="#lifestyle">LIFESTYLE</a>
+        <a href="#lifestyle">FASHION</a>
+        <a href="order.html">ORDER</a>
+        <a href="#info">INFO</a>
+    </div>
+    <div class="socialLinks">
+    <a href="https://www.instagram.com/vladislavmartyak/" target="_blank" title="Instagram"><i class="fab fa-instagram" style="font-size:20px;color:white;padding:5px"></i></a>
+    <a href="https://www.facebook.com/VladislavMartyak" target="_blank" title="Facebook"><i class="fab fa-facebook-square" style="font-size:20px;color:white;padding:5px"></i></a>
+    <a href="https://t.me/vladislavmartyak" target="_blank" title="Telegram"><i class="fab fa-telegram-plane" style="font-size:20px;color:white;padding:5px"></i></a>
+    </div>
+    </div>
+    <p1>#2019 Vladislav Martyak. Site powered by magic</p1>
+</div>
+</body>
+</html>

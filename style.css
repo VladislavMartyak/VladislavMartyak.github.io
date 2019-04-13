@@ -1,0 +1,489 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*----Custom fonts----*/
+/*=========================================================================================*/
+
+@font-face {
+    font-family: GothamPro-Bold;
+    src: url(GothamPro-Bold.ttf);
+}
+
+@font-face {
+    font-family: GothamPro-Light;
+    src: url(GothamPro-Light.ttf);
+}
+
+@font-face {
+    font-family: GothamPro-Medium;
+    src: url(GothamPro-Medium.ttf);
+}
+
+@font-face {
+    font-family: GothamPro;
+    src: url(GothamPro.ttf);
+}
+
+
+/*----Intro block----*/
+/*=========================================================================================*/
+
+#Intro{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.introImage{
+    object-fit: cover;
+    width: 100%;
+    height: 900px;
+}
+
+.mainLogo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 440px;
+}
+
+
+
+/*----Navigation bar----*/
+/*=========================================================================================*/
+
+
+#iconOpen{
+    display: none;
+    transition: 1s;
+}
+
+.navLogo{
+    padding-left: 20px;
+    height: 60px;
+}
+
+
+.closebtn{
+    margin-top: 7px;
+    margin-right: -6px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.overlapping {
+    padding-top: 60px;
+}
+
+#navBarSticky {
+    z-index: 5;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    background-color: white;
+    width: 100%; 
+    font: 10px;
+    height: 60px;
+    vertical-align: middle;
+    align-items: center
+        
+}
+
+#navBarFixed {
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    background-color: white;
+    width: 100%; 
+    font: 10px;
+    height: 60px;
+    vertical-align: middle;
+    align-items: center;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+ 
+
+}
+
+
+/*----Navigation bar: Side menu----*/
+/*=========================================================================================*/
+
+.sidenav {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%; 
+    width: 0; /*JavaScript changes*/
+    position: fixed; 
+    z-index: 10; 
+    top: 0; 
+    right: 0;
+    background: rgba(255, 255, 255, 0.9);
+    
+    overflow-x: hidden; 
+    padding-top: 60px; 
+    transition: 0.5s; 
+}
+
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-family: GothamPro-Bold;
+    font-size: 60px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+    display: block;
+    text-align: center;
+}
+
+
+.sidenav a:hover {
+    color: orange;
+}
+
+.sidenav a.active{
+    color: orangered;
+}
+
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+
+/*=========================================================================================*/
+
+body{
+    min-width: 540px;
+}
+
+#main {
+    transition: margin-left .5s;
+    font-size: 30px;
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+
+/*----Representation Gallery----*/
+/*=========================================================================================*/
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+
+.column {
+    flex: 33%;
+    max-width: 33%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+
+/*----Footer----*/
+/*=========================================================================================*/
+
+.footer{
+    height: auto;
+    background-color: black;
+    color: white;
+}
+
+.footerLinks{
+    padding-top: 6px;
+    display: block;
+    padding-left: 20px;
+}
+
+.footerLinks a {
+    text-decoration: none;
+    font-family: GothamPro-Medium;
+    align-items: center;
+    font-size: 15px;
+    padding-right: 20px;
+    color: white;
+}
+
+.footerLinks a.active{
+    color: orangered;
+}
+
+.socialLinks{
+    display: block;
+    padding-right: 20px;
+}
+
+.mainLine{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    
+}
+
+.footerLinks a:hover {
+    transition: 0.3s;
+    color: orange;
+}
+
+
+p1{
+    display: block;
+    font-family: GothamPro;
+    text-align: right;
+    font-size: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+}
+
+
+@media (max-width: 800px) {
+  .column {
+      flex: 50%;
+      max-width: 50%;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .column {
+      flex: 100%;
+      max-width: 100%;
+  }
+}
+
+@media (max-width: 700px) {
+    .mainLine{
+        flex-direction: column;
+}
+    .socialLinks{
+        padding-top: 20px;
+        padding-left: 15px;
+}
+}
+
+
+
+/*----Order page----*/
+/*=========================================================================================*/
+
+h1{    
+    margin-top: 60px;
+    font-family: GothamPro-Bold;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 50px;
+}
+
+.requestForm {
+    width: 45%;
+    border-radius: 5px;
+    color: black;
+    font-family: GothamPro-Bold;
+    padding: 20px;
+    font-size: 30px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    
+}
+
+input[type=text], select, textarea {
+    padding-left: 20px;
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */  
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+input[type=password], select, textarea {
+    padding-left: 20px;
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */  
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+#receiptTable, th, td {
+    
+    /*border: 1px solid black;*/
+    font-size: 20px;
+    border: none;
+}
+
+
+.requestContainer{
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
+/*----Radio buttons----*/
+/*=========================================================================================*/
+
+
+/* Hide the browser's default radio button */
+.container{
+    font-family: GothamPro-Medium;
+    font-size: 30px;
+    padding-top: 16px;
+}
+
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+    margin-top: 16px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%; 
+}
+
+
+.container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+.container input:checked ~ .checkmark {
+    background-color: black;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.container input:checked ~ .checkmark:after {   
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+
+
+.selectBlock{
+    margin-top: 6px;
+    margin-bottom: 16px;
+    height: 50px;
+    background-color: white;
+    box-sizing: border-box;
+    font-family: GothamPro-Medium;
+    font-size: 25px;
+    border: 0.5px solid #dcdcdc;
+    border-radius: 0px;
+    -webkit-appearance: none;
+    cursor: pointer
+}
+
+.inputField{
+    font-family: GothamPro-Medium;
+    font-size: 25px;
+}
+
+
+.sumbitButton{
+    margin-top: 10px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: GothamPro-Bold;
+    font-size: 25px;
+    height: 40px;
+    width: 120px;
+    border: none;
+    cursor: pointer;
+    
+}
+
+h2{
+    font-family: GothamPro-Bold;
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 35px;
+}
+
+
+.reviewArea{
+    border: 0.5px solid #dcdcdc;
+    border-radius: 0px;
+    font-family: GothamPro;
+    font-size: 15px;
+    text-align: justify;
+}
+
+
+
+.story_image1, .story_image2, .story_image3, .story_image4, .story_image5, .story_image6, .story_image7, .story_image8, .story_image9{
+    position: relative;
+    transition: height .5s;
+    background: white;
+    margin-bottom: 10px;
+}
+
+
+.mySlides1, .mySlides2, .mySlides3, .mySlides4, .mySlides5, .mySlides6, .mySlides7, .mySlides8, .mySlides9{
+    position: absolute;
+    transition: opacity .5s;
+
+}
