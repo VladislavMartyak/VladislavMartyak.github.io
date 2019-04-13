@@ -35,7 +35,7 @@ body {
 /*----Intro block----*/
 /*=========================================================================================*/
 
-#Intro{
+.Intro{
     position: relative;
     text-align: center;
     color: white;
@@ -53,6 +53,10 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 640px;
+}
+
+.errorLogo{
+    
 }
 
 
