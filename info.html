@@ -5,6 +5,10 @@
     <title>Order</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous"> 
+    <script src="https://www.amcharts.com/lib/4/core.js"></script>
+    <script src="https://www.amcharts.com/lib/4/charts.js"></script>
+    <script src="https://www.amcharts.com/lib/4/themes/dataviz.js"></script>
+    <script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
 </head>
 <body>
    <div id="navBarFixed">
@@ -21,12 +25,18 @@
    <a href="order.html">ORDER</a>
    <a class="active" href="info.html" >INFO</a>
 </div>
-   <script src="script.js"> </script>
+   
     <h1>Info<br></h1>
+    <h2>What to know how many shoots did I have?</h2>
+    <h3>Here is a radial histogram `cause we all love numbers` where you can see<br> 
+        the exact amount of clients I had last year per months. Just try it!</h3>
+    <div id="chartdiv"></div>		
+    <script  src="amCharts4.js"></script>
+
     <div class="requestContainer">
     <div class="requestForm">
        <form action="" method="get">
-        <h2>Track your order:</h2>
+        <h2>Do you want to track your order?</h2>
         E-mail: <input type="text" class="inputField" id="fieldEmail" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.(?!ru)[a-z]{2,4}$"><br>
         Password: <input type="password" class="inputField" id="fiedPassword" name="secondName" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*"><br>
         <input type="submit" onClick="return empty()" class="sumbitButton" value="Track">
@@ -61,5 +71,6 @@
     </div>
     <p1>#2019 Vladislav Martyak. Site powered by magic</p1>
 </div>
+<script src="script.js"> </script>
 </body>
 </html>
