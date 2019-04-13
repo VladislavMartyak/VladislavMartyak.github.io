@@ -228,5 +228,36 @@ function carousel9() {
     setTimeout(function() {element9.style.opacity = "1"; setTimeout(carousel9, 7250);},650);
 }
 
+var currentTime = new Date().getHours();
+if (7 <= currentTime && currentTime < 20) {
+    if (document.body) {
+        document.body.style.backgroundColor = "white";
+        document.getElementsByClassName('story_image1')[0].style.backgroundColor = "white";
+        document.getElementsByClassName('story_image2')[0].style.backgroundColor = "white";
+        document.getElementsByClassName('story_image3')[0].style.backgroundColor = "white";
+        document.getElementsByClassName('story_image4')[0].style.backgroundColor = "white";
+        document.getElementsByClassName('story_image5')[0].style.backgroundColor = "white";
+        document.getElementsByClassName('story_image6')[0].style.backgroundColor = "white";
+        document.getElementsByClassName('story_image7')[0].style.backgroundColor = "white";
+        document.getElementsByClassName('story_image8')[0].style.backgroundColor = "white";
+        document.getElementsByClassName('story_image9')[0].style.backgroundColor = "white";
+    }
+}
+else {
+    if (document.body) {
+        document.body.style.backgroundColor = "black";
+        document.getElementsByClassName('story_image1')[0].style.backgroundColor = "black";
+        document.getElementsByClassName('story_image2')[0].style.backgroundColor = "black";
+        document.getElementsByClassName('story_image3')[0].style.backgroundColor = "black";
+        document.getElementsByClassName('story_image4')[0].style.backgroundColor = "black";
+        document.getElementsByClassName('story_image5')[0].style.backgroundColor = "black";
+        document.getElementsByClassName('story_image6')[0].style.backgroundColor = "black";
+        document.getElementsByClassName('story_image7')[0].style.backgroundColor = "black";
+        document.getElementsByClassName('story_image8')[0].style.backgroundColor = "black";
+        document.getElementsByClassName('story_image9')[0].style.backgroundColor = "black"; 
+    }
+}
+
+
 
 
