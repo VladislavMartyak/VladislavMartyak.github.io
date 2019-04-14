@@ -12,19 +12,19 @@ function closeNav() {
 
 window.onscroll = function() {stickyNav()};
 var navbar = document.getElementById("navBarSticky");
-var main = document.getElementById("main");
+var imageGallery = document.getElementById("imageGallery");
 var sticky = navbar.offsetTop;
        
 function stickyNav() {
     if (window.pageYOffset >= sticky) {
         navbar.classList.add("sticky")
-        main.classList.add("overlapping")
+        imageGallery.classList.add("overlapping")
         var navIcon = document.getElementById("iconOpen");
         navIcon.style.display = "block";
     } 
     else {   
         navbar.classList.remove("sticky");
-        main.classList.remove("overlapping")
+        imageGallery.classList.remove("overlapping")
         var navIcon = document.getElementById("iconOpen");
         navIcon.style.display = "none";
     }
@@ -76,7 +76,7 @@ function empty(){
     };
 }
 
-
+/*
 
 var myIndex1 = 0, myIndex2 = 0, myIndex3 = 0, myIndex4 = 0, myIndex5 = 0, myIndex6 = 0, myIndex7 = 0, myIndex8 = 0, myIndex9 = 0;
 var container1 = document.getElementsByClassName('story_image1')[0], container2 = document.getElementsByClassName('story_image2')[0],
@@ -227,6 +227,8 @@ function carousel9() {
     container9.style.height = element9.height + 'px';
     setTimeout(function() {element9.style.opacity = "1"; setTimeout(carousel9, 7250);},650);
 }
+
+*/
 
 var currentTime = new Date().getHours();
 if (7 <= currentTime && currentTime < 20) {
