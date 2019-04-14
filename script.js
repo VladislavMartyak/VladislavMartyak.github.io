@@ -1,3 +1,18 @@
+/*----Cool scroll effect by ScrollReveal library----*/
+/*=========================================================================================*/
+ScrollReveal().reveal("#slides1"); 
+ScrollReveal().reveal("#slides2"); 
+ScrollReveal().reveal("#slides3");
+ScrollReveal().reveal("#slides4"); 
+ScrollReveal().reveal("#slides5"); 
+ScrollReveal().reveal("#slides6");
+ScrollReveal().reveal("#slides7"); 
+ScrollReveal().reveal("#slides8"); 
+ScrollReveal().reveal("#slides9");
+
+/*----Hide and show open/close navbar icon----*/
+/*=========================================================================================*/
+
 $(document).ready(function(){
     $("#iconOpen").click(function(){
         $("#mySidenav").width("100%");
@@ -12,47 +27,99 @@ $(document).ready(function(){
     });
 });
 
-var navbar = document.getElementById("navBarSticky");
-var imageGallery = document.getElementById("imageGallery");
-var $sticky = navbar.offsetTop;
+/*----Hide and show open/close navbar icon----*/
+/*=========================================================================================*/
 
 $(window).scroll(function(){
+    var $sticky = $("#navBarSticky").offset().top;
     if (window.pageYOffset >= $sticky) {  
         $("#navBarSticky").addClass("sticky");
-        //navbar.classList.add("sticky");
         $("#imageGallery").addClass("overlapping");
-        //imageGallery.classList.add("overlapping");
-        //var navIcon = document.getElementById("iconOpen");
-        //navIcon.style.display = "block";
         $("#iconOpen").show();
     } 
     else {   
         $("#navBarSticky").removeClass("sticky");
-        //navbar.classList.remove("sticky");
         $("#imageGallery").removeClass("overlapping");
-        //imageGallery.classList.remove("overlapping")
-       // var navIcon = document.getElementById("iconOpen");
-        //navIcon.style.display = "none";
         $("#iconOpen").hide();
     }
 });
 
-/*
-window.onscroll = function() {stickyNav()};
-function stickyNav() {
-    if (window.pageYOffset >= sticky) {
-        navbar.classList.add("sticky")
-        imageGallery.classList.add("overlapping")
-        var navIcon = document.getElementById("iconOpen");
-        navIcon.style.display = "block";
-    } 
-    else {   
-        navbar.classList.remove("sticky");
-        imageGallery.classList.remove("overlapping")
-        var navIcon = document.getElementById("iconOpen");
-        navIcon.style.display = "none";
-    }
-}*/
+$(function() {
+    $("#slides1").responsiveSlides({
+        speed: 800,            
+        timeout: 9000,
+        random: true
+    });
+  });
+
+$(function() {
+    $("#slides4").responsiveSlides({
+        speed: 800,           
+        timeout: 9000,
+        random: true
+    });
+  });
+
+$(function() {
+    $("#slides7").responsiveSlides({
+        speed: 800,        
+        timeout: 9000,
+        random: true
+    });
+  });
+
+
+$(function() {
+    $("#slides2").responsiveSlides({
+        speed: 800,           
+        timeout: 11000,
+        random: true
+    });
+  });
+
+$(function() {
+    $("#slides5").responsiveSlides({
+        speed: 800,           
+        timeout: 11000,
+        random: true    
+    });
+  });
+
+$(function() {
+    $("#slides8").responsiveSlides({
+        speed: 800,       
+        timeout: 11000,
+        random: true
+    });
+  });
+
+
+$(function() {
+    $("#slides3").responsiveSlides({
+        speed: 800,         
+        timeout: 13000,
+        random: true
+    });
+  });
+
+$(function() {
+    $("#slides6").responsiveSlides({
+        speed: 800,           
+        timeout: 13000,
+        random: true
+    });
+  });
+
+
+$(function() {
+    $("#slides9").responsiveSlides({
+        speed: 800,         
+        timeout: 13000,
+        random: true
+    });
+  });
+
+
 
 function empty(){
     var textFirstName = document.getElementById("fieldFirstName").value;
@@ -81,19 +148,6 @@ function empty(){
     };
 }
 
-/*
-var currentTime = new Date().getHours();
-if (7 <= currentTime && currentTime < 20) {
-    if (document.body) {
-        document.body.style.backgroundColor = "white";
-    }
-}
-else {
-    if (document.body) {
-        document.body.style.backgroundColor = "black";
-    }
-}
-*/
 
 
 
