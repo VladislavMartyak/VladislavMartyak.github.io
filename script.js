@@ -44,6 +44,9 @@ $(window).scroll(function(){
     }
 });
 
+/*----Auto-slide for images on the front page----*/
+/*=========================================================================================*/
+
 $(function() {
     $("#slides1").responsiveSlides({
         speed: 800,            
@@ -119,6 +122,9 @@ $(function() {
     });
   });
 
+
+/*----Check if user missed some lines----*/
+/*=========================================================================================*/
 
 
 function empty(){
