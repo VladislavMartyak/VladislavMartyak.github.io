@@ -1,20 +1,44 @@
-function openNav() {
-    document.getElementById("mySidenav").style.width = "100%";
-    var navIcon = document.getElementById("iconOpen");
-    navIcon.style.display = "none";
-}
+$(document).ready(function(){
+    $("#iconOpen").click(function(){
+        $("#mySidenav").width("100%");
+        $("#iconOpen").hide();
+    });
+});
 
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-    var navIcon = document.getElementById("iconOpen");
-    navIcon.style.display = "block";
-}
+$(document).ready(function(){
+    $("#iconClose").click(function(){
+        $("#mySidenav").width(0);
+        $("#iconOpen").show();
+    });
+});
 
-window.onscroll = function() {stickyNav()};
 var navbar = document.getElementById("navBarSticky");
 var imageGallery = document.getElementById("imageGallery");
-var sticky = navbar.offsetTop;
-       
+var $sticky = navbar.offsetTop;
+
+$(window).scroll(function(){
+    if (window.pageYOffset >= $sticky) {  
+        $("#navBarSticky").addClass("sticky");
+        //navbar.classList.add("sticky");
+        $("#imageGallery").addClass("overlapping");
+        //imageGallery.classList.add("overlapping");
+        //var navIcon = document.getElementById("iconOpen");
+        //navIcon.style.display = "block";
+        $("#iconOpen").show();
+    } 
+    else {   
+        $("#navBarSticky").removeClass("sticky");
+        //navbar.classList.remove("sticky");
+        $("#imageGallery").removeClass("overlapping");
+        //imageGallery.classList.remove("overlapping")
+       // var navIcon = document.getElementById("iconOpen");
+        //navIcon.style.display = "none";
+        $("#iconOpen").hide();
+    }
+});
+
+/*
+window.onscroll = function() {stickyNav()};
 function stickyNav() {
     if (window.pageYOffset >= sticky) {
         navbar.classList.add("sticky")
@@ -28,26 +52,7 @@ function stickyNav() {
         var navIcon = document.getElementById("iconOpen");
         navIcon.style.display = "none";
     }
-}
-
-function Add() {
-    var text = document.getElementById("mrelease").value;
-    if (text == ''){
-        alert('The line is empty!');
-    }
-    var node = document.createElement("li");
-    var textnode = document.createTextNode(text);
-    node.appendChild(textnode);
-    document.getElementById("myList").appendChild(node);
-
-}
-
-
-function Remove() {
-    var list = document.getElementById("myList");
-    list.removeChild(list.childNodes[1]);
-}
-
+}*/
 
 function empty(){
     var textFirstName = document.getElementById("fieldFirstName").value;
