@@ -1,14 +1,14 @@
 /*----Cool scroll effect by ScrollReveal library----*/
 /*=========================================================================================*/
-ScrollReveal().reveal("#slides1"); 
-ScrollReveal().reveal("#slides2"); 
-ScrollReveal().reveal("#slides3");
-ScrollReveal().reveal("#slides4"); 
-ScrollReveal().reveal("#slides5"); 
-ScrollReveal().reveal("#slides6");
-ScrollReveal().reveal("#slides7"); 
-ScrollReveal().reveal("#slides8"); 
-ScrollReveal().reveal("#slides9");
+//ScrollReveal().reveal("#slides1"); 
+//ScrollReveal().reveal("#slides2"); 
+//ScrollReveal().reveal("#slides3");
+//ScrollReveal().reveal("#slides4"); 
+//ScrollReveal().reveal("#slides5"); 
+//ScrollReveal().reveal("#slides6");
+//ScrollReveal().reveal("#slides7"); 
+//ScrollReveal().reveal("#slides8"); 
+//ScrollReveal().reveal("#slides9");
 
 /*----Hide and show open/close navbar icon----*/
 /*=========================================================================================*/
