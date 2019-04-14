@@ -30,11 +30,11 @@ $(document).ready(function(){
 /*----Hide and show open/close navbar icon----*/
 /*=========================================================================================*/
 window.onscroll = function() {stickyNav()};
-//var $navbar = document.getElementById("navBarSticky");
-//var $sticky = $navbar.offsetTop;
-var $sticky = $("#navBarSticky").offset().top;
+
 
 $(window).scroll(function(){
+    var $navbar = document.getElementById("navBarSticky");
+    var $sticky = $navbar.offsetTop;
     if (window.pageYOffset >= $sticky) {  
         $("#navBarSticky").addClass("sticky");
         $("#imageGallery").addClass("overlapping");
