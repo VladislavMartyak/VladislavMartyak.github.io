@@ -174,11 +174,6 @@ body{
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
-#main {
-    position: relative;
-}
-
-
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
@@ -189,7 +184,10 @@ body{
 /*=========================================================================================*/
 #imageGallery{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    position: relative;
+    list-style: none;
 }
 
 .slidescolomn{
@@ -203,6 +201,10 @@ body{
     padding-bottom: 10px;
 }
 
+#slides1, #slides2, #slides3, #slides4, #slides5, #slides6, #slides7, #slides8, #slides9{
+    position: relative;
+    overflow: hidden;
+}
 
 /*----Footer----*/
 /*=========================================================================================*/

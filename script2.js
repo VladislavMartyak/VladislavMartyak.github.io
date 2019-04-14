@@ -1,104 +1,86 @@
-$("#slides1 > div:gt(0)").hide();
-
-setInterval(function() { 
-  $('#slides1 > div:first')
-    .fadeOut(1000)
-    .next()
-    .fadeIn(1000)
-    .end()
-    .appendTo('#slides1');
-},  10000);
-
-$("#slides2 > div:gt(0)").hide();
-
-setInterval(function() { 
-  $('#slides2 > div:first')
-    .fadeOut(1000)
-    .next()
-    .fadeIn(1000)
-    .end()
-    .appendTo('#slides2');
-},  10000);
-
-$("#slides3 > div:gt(0)").hide();
-
-setInterval(function() { 
-  $('#slides3 > div:first')
-    .fadeOut(1000)
-    .next()
-    .fadeIn(1000)
-    .end()
-    .appendTo('#slides3');
-},  10000);
+ScrollReveal().reveal("#slides1");
+ScrollReveal().reveal("#slides2");
+ScrollReveal().reveal("#slides3");
+ScrollReveal().reveal("#slides4");
+ScrollReveal().reveal("#slides5");
+ScrollReveal().reveal("#slides6");
+ScrollReveal().reveal("#slides7");
+ScrollReveal().reveal("#slides8");
+ScrollReveal().reveal("#slides9");
 
 
-$("#slides4 > div:gt(0)").hide();
+$(function() {
+    $("#slides1").responsiveSlides({
+        speed: 800,            // Integer: Speed of the transition, in milliseconds
+        timeout: 9000,
+        random: true// Integer: Time between slide transitions, in milliseconds
+    });
+  });
 
-setInterval(function() { 
-  $('#slides4 > div:first')
-    .fadeOut(1000)
-    .next()
-    .fadeIn(1000)
-    .end()
-    .appendTo('#slides4');
-}, 103000);
+$(function() {
+    $("#slides4").responsiveSlides({
+        speed: 800,            // Integer: Speed of the transition, in milliseconds
+        timeout: 9000,
+        random: true// Integer: Time between slide transitions, in milliseconds
+    });
+  });
 
-
-$("#slides5 > div:gt(0)").hide();
-
-setInterval(function() { 
-  $('#slides5 > div:first')
-    .fadeOut(1000)
-    .next()
-    .fadeIn(1000)
-    .end()
-    .appendTo('#slides5');
-},  10000);
-
-
-$("#slides6 > div:gt(0)").hide();
-
-setInterval(function() { 
-  $('#slides6 > div:first')
-    .fadeOut(1000)
-    .next()
-    .fadeIn(1000)
-    .end()
-    .appendTo('#slides6');
-},  10000);
+$(function() {
+    $("#slides7").responsiveSlides({
+        speed: 800,            // Integer: Speed of the transition, in milliseconds
+        timeout: 9000,
+        random: true// Integer: Time between slide transitions, in milliseconds
+    });
+  });
 
 
-$("#slides7 > div:gt(0)").hide();
+$(function() {
+    $("#slides2").responsiveSlides({
+        speed: 800,            // Integer: Speed of the transition, in milliseconds
+        timeout: 11000,
+        random: true// Integer: Time between slide transitions, in milliseconds
+    });
+  });
 
-setInterval(function() { 
-  $('#slides7 > div:first')
-    .fadeOut(1000)
-    .next()
-    .fadeIn(1000)
-    .end()
-    .appendTo('#slides7');
-},  10000);
+$(function() {
+    $("#slides5").responsiveSlides({
+        speed: 800,            // Integer: Speed of the transition, in milliseconds
+        timeout: 11000,
+        random: true      // Integer: Time between slide transitions, in milliseconds
+    });
+  });
+
+$(function() {
+    $("#slides8").responsiveSlides({
+        speed: 800,            // Integer: Speed of the transition, in milliseconds
+        timeout: 11000,
+        random: true// Integer: Time between slide transitions, in milliseconds
+    });
+  });
 
 
-$("#slides8 > div:gt(0)").hide();
+$(function() {
+    $("#slides3").responsiveSlides({
+        speed: 800,            // Integer: Speed of the transition, in milliseconds
+        timeout: 13000,
+        random: true// Integer: Time between slide transitions, in milliseconds
+    });
+  });
 
-setInterval(function() { 
-  $('#slides8 > div:first')
-    .fadeOut(1000)
-    .next()
-    .fadeIn(1000)
-    .end()
-    .appendTo('#slides8');
-},  10000);
+$(function() {
+    $("#slides6").responsiveSlides({
+        speed: 800,            // Integer: Speed of the transition, in milliseconds
+        timeout: 13000,
+        random: true// Integer: Time between slide transitions, in milliseconds
+    });
+  });
 
 
-$("#slides9 > div:gt(0)").hide();
+$(function() {
+    $("#slides9").responsiveSlides({
+        speed: 800,            // Integer: Speed of the transition, in milliseconds
+        timeout: 13000,
+        random: true// Integer: Time between slide transitions, in milliseconds
+    });
+  });
 
-setInterval(function() { 
-  $('#slides9 > div:first')
-    .fadeOut(1000)
-    .next()
-    .fadeIn(1000)
-    .end()
-    .appendTo('#slides9');
-},  10000);
