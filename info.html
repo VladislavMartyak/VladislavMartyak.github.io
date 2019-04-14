@@ -9,15 +9,18 @@
     <script src="https://www.amcharts.com/lib/4/charts.js"></script>
     <script src="https://www.amcharts.com/lib/4/themes/dataviz.js"></script>
     <script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
+    <script src="jquery-3.4.0.min.js"></script>  
+    <script src="https://unpkg.com/scrollreveal@4"></script>
+    <script src="responsiveslides.min.js"></script>
 </head>
 <body>
    <div id="navBarFixed">
     <img class="navLogo" src="Logos/logoVM.png"/> 
-    <span id= "iconOpen" onclick="openNav()"><i class="fas fa-bars" style="font-size:30px;color:black;padding-right: 25px;cursor:pointer"></i></span>
+    <span id= "iconOpen"><i class="fas fa-bars" style="font-size:30px;color:black;padding-right: 25px;cursor: pointer"></i></span>
 </div>
 
 <div id="mySidenav" class="sidenav">
-   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+   <a href="javascript:void(0)" id="iconClose" class="closebtn" onclick="closeNav()">&times;</a>
    <a href="index.html">OVERVIEW</a>
    <a href="404.html">PORTRAIT</a>
    <a href="404.html">LIFESTYLE</a>

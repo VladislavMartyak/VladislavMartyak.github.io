@@ -3,17 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <title>Order</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous"> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <script src="jquery-3.4.0.min.js"></script>  
+    <script src="https://unpkg.com/scrollreveal@4"></script>
+    <script src="responsiveslides.min.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
    <div id="navBarFixed">
     <img class="navLogo" src="Logos/logoVM.png"/> 
-    <span onclick="openNav()"><i class="fas fa-bars" style="font-size:30px;color:black;padding-right: 25px;cursor:pointer"></i></span>
+    <span id= "iconOpen"><i class="fas fa-bars" style="font-size:30px;color:black;padding-right: 25px;cursor: pointer"></i></span>
 </div>
 
 <div id="mySidenav" class="sidenav">
-   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+   <a href="javascript:void(0)" id="iconClose" class="closebtn" onclick="closeNav()">&times;</a>
    <a href="index.html">OVERVIEW</a>
    <a href="404.html">PORTRAIT</a>
    <a href="404.html">LIFESTYLE</a>
@@ -21,7 +25,6 @@
    <a class="active" href="order.html">ORDER</a>
    <a href="info.html">INFO</a>
 </div>
-   <script src="script.js"> </script>
     <h1>Request a photoshoot<br></h1>
     <div class="requestContainer">
     <div class="requestForm">
@@ -90,4 +93,5 @@
     <p1>#2019 Vladislav Martyak. Site powered by magic</p1>
 </div>
 </body>
+<script src="script.js"> </script>
 </html>

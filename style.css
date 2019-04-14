@@ -27,6 +27,44 @@
     src: url(GothamPro.ttf);
 }
 
+/*----Paragraphs----*/
+/*=========================================================================================*/
+
+h1{    
+    margin-top: 60px;
+    font-family: GothamPro-Bold;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 60px;
+}
+
+h2{
+    font-family: GothamPro-Bold;
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 35px;
+}
+
+h3{
+    font-family: GothamPro-Medium;
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+
+h4{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+h5{
+    font-family: GothamPro-Bold;
+    text-align: center;
+    color: white;
+    padding-top: 10%;
+    font-size: 300px;
+}
 
 /*----Intro block----*/
 /*=========================================================================================*/
@@ -51,18 +89,10 @@
     width: 640px;
 }
 
-.errorLogo{
-    
-}
-
-
-
 /*----Navigation bar----*/
 /*=========================================================================================*/
 
-
 #iconOpen{
-    display: none;
     transition: 1s;
 }
 
@@ -115,7 +145,6 @@
     top: 0; /* Position the navbar at the top of the page */
 }
 
-
 /*----Navigation bar: Side menu----*/
 /*=========================================================================================*/
 
@@ -135,7 +164,6 @@
     transition: 0.5s; 
 }
 
-
 .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
@@ -147,7 +175,6 @@
     display: block;
     text-align: center;
 }
-
 
 .sidenav a:hover {
     color: orange;
@@ -166,7 +193,6 @@
     margin-left: 50px;
 }
 
-
 /*=========================================================================================*/
 
 body{
@@ -182,6 +208,7 @@ body{
 
 /*----Representation Gallery----*/
 /*=========================================================================================*/
+
 #imageGallery{
     display: flex;
     flex-wrap: wrap;
@@ -251,7 +278,6 @@ body{
     color: orange;
 }
 
-
 p1{
     display: block;
     font-family: GothamPro;
@@ -262,14 +288,12 @@ p1{
     padding-right: 20px;
 }
 
-
 @media (max-width: 800px) {
   .column {
       flex: 50%;
       max-width: 50%;
   }
 }
-
 
 @media (max-width: 600px) {
   .column {
@@ -288,19 +312,8 @@ p1{
 }
 }
 
-
-
 /*----Order page----*/
 /*=========================================================================================*/
-
-h1{    
-    margin-top: 60px;
-    font-family: GothamPro-Bold;
-    padding-left: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    font-size: 60px;
-}
 
 .requestForm {
     width: 45%;
@@ -454,35 +467,6 @@ input[type=password], select, textarea {
     
 }
 
-h2{
-    font-family: GothamPro-Bold;
-    text-align: center;
-    padding-bottom: 20px;
-    font-size: 35px;
-}
-
-
-h3{
-    font-family: GothamPro-Medium;
-    text-align: center;
-    padding-bottom: 20px;
-    font-size: 20px;
-}
-
-h4{
-    padding-top: 40px;
-    padding-bottom: 40px;
-}
-
-h5{
-    font-family: GothamPro-Bold;
-    text-align: center;
-    color: white;
-    padding-top: 10%;
-    font-size: 300px;
-}
-
-
 .reviewArea{
     border: 0.5px solid #dcdcdc;
     border-radius: 0px;
@@ -508,7 +492,6 @@ h5{
 
 }
 
-
 /*----Histogram----*/
 /*=========================================================================================*/
 
@@ -518,6 +501,8 @@ h5{
     height: 500px;
 }
 
+/*----404 Page----*/
+/*=========================================================================================*/
 
 #spaceArea {
     width: 100%;
