@@ -97,6 +97,7 @@ h5{
 }
 
 .navLogo{
+    object-fit: cover;
     height: 70%;
     padding-left: 20px;
 }
