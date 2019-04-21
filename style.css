@@ -66,6 +66,13 @@ h5{
     font-size: 300px;
 }
 
+h6{
+    font-family: GothamPro-Bold;
+    font-size: 60px;
+    color: white;
+    
+}
+
 /*----Intro block----*/
 /*=========================================================================================*/
 
@@ -211,7 +218,6 @@ body{
 #imageGallery{
     display: flex;
     flex-wrap: wrap;
-    /*justify-content: center;*/
     position: relative;
     list-style: none;
 }
@@ -234,40 +240,20 @@ body{
     color: white;
 }
 
-.footerLinks{
-    padding-top: 6px;
+.footerblock{
+    display: flex;
+    flex-direction: column;
+    margin-top: -7px;
+}
+
+.socialLink{
     display: block;
-    padding-left: 20px;
-}
-
-.footerLinks a {
-    text-decoration: none !important;
-    font-family: GothamPro-Medium;
-    align-items: center;
-    font-size: 15px;
-    padding-right: 20px;
-    color: white;
-}
-
-.footerLinks a.active{
-    color: orangered;
 }
 
 .socialLinks{
-    display: block;
-    padding-right: 20px;
-}
-
-.mainLine{
     display: flex;
-    justify-content: space-between;
-    padding-top: 20px;
+    justify-content: flex-end;
     
-}
-
-.footerLinks a:hover {
-    transition: 0.3s;
-    color: orange;
 }
 
 p1{
@@ -275,33 +261,11 @@ p1{
     font-family: GothamPro;
     text-align: right;
     font-size: 10px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-right: 20px;
 }
 
-@media (max-width: 800px) {
-  .column {
-      flex: 50%;
-      max-width: 50%;
-  }
-}
-
-@media (max-width: 600px) {
-  .column {
-      flex: 100%;
-      max-width: 100%;
-  }
-}
-
-@media (max-width: 700px) {
-    .mainLine{
-        flex-direction: column;
-}
-    .socialLinks{
-        padding-top: 20px;
-        padding-left: 15px;
-}
+.footerContent{
+    display: flex;
+    align-items: center;
 }
 
 /*----Order page----*/
@@ -529,4 +493,3 @@ canvas {
     transform: translate(-50%, -50%);
     width: 50%;
 }
-
