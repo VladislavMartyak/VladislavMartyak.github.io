@@ -86,8 +86,7 @@ h5{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 80vh;
-    /*min-width: 300px;*/
+    height: 50vh;
 }
 
 /*----Navigation bar----*/
@@ -98,7 +97,7 @@ h5{
 }
 
 .navLogo{
-    height: 70%;
+    height: 75%;
 }
 
 
