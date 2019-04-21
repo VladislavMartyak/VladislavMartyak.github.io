@@ -216,15 +216,8 @@ body{
     list-style: none;
 }
 
-.slidescolomn{
-    flex: 32%;
-    max-width: 32%;
-    padding: 0 5px;
-}
-
 .galleryImage{
     width: 100%;
-    padding-bottom: 10px;
 }
 
 #slides1, #slides2, #slides3, #slides4, #slides5, #slides6, #slides7, #slides8, #slides9{
