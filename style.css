@@ -211,7 +211,7 @@ body{
 #imageGallery{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    /*justify-content: center;*/
     position: relative;
     list-style: none;
 }
