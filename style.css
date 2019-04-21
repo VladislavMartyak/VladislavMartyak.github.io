@@ -86,7 +86,7 @@ h5{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 60vh;
+    width: 80vh;
     /*min-width: 300px;*/
 }
 
