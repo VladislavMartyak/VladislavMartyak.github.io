@@ -493,3 +493,8 @@ canvas {
     transform: translate(-50%, -50%);
     width: 50%;
 }
+
+
+@media (max-width: 767px) {
+    footer .text-right { text-align:center }
+}
