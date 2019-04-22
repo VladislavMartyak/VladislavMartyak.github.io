@@ -44,6 +44,13 @@ $(window).scroll(function(){
     }
 });
 
+
+/*----JQuery Ajax request using GET method----*/
+/*=========================================================================================*/
+
+
+
+
 /*----Auto-slide for images on the front page----*/
 /*=========================================================================================*/
 
@@ -126,8 +133,9 @@ $(function() {
 /*----Check if user missed some lines----*/
 /*=========================================================================================*/
 
-
+/*
 function empty(){
+    alert("Hello");
     var textFirstName = document.getElementById("fieldFirstName").value;
     var textEmail = document.getElementById("fieldEmail").value;
     var textPhoneNumber = document.getElementById("fieldPhoneNumber").value;
@@ -152,8 +160,7 @@ function empty(){
         alert("Enter text in field 'E-mail'");
         return false;
     };
-}
-
+}*/
 
 
 
