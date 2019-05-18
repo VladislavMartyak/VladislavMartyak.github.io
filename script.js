@@ -45,11 +45,60 @@ $(window).scroll(function(){
 });
 
 
-/*----JQuery Ajax request using GET method----*/
+/*----JQuery Ajax request using GET & POSTmethod----*/
 /*=========================================================================================*/
+$(document).ready(function(){
+    $("#submitButton").click(function(){
+        $.get("test_get_jquery.asp", function(data, status){
+            alert("Text: " + data + "\nStatus: " + status);
+        });
+    });
+});
+
+$(document).ready(function(){
+    $("#submitButton").click(function(){
+        $.post("test_post_jquery.asp",
+            {
+            name: "Claire Underwood",
+            photoshoot: "Portrait",
+            country: "USA"
+            },
+        function(data,status){
+            alert("Data: " + data + "\nStatus: " + status);
+    });
+    });
+});
+
+/*----XML Ajax request using GET & POSTmethod----*/
+/*=========================================================================================*/
+$(document).ready(function(){
+    $("#submitButton").click(function(){
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200){
+            document.getElementById("demo").innerHTML =
+            this.responseText;
+            }
+        };
+        xhttp.open("GET", "test_get_xml.txt", true);
+        xhttp.send();
+    });
+});
 
 
-
+$(document).ready(function(){
+    $("#submitButton").click(function(){
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("test_post_asp_el").innerHTML = this.responseText;
+            }
+        };
+        xhttp.open("POST", "test_post_xml.asp", true);
+        xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+        xhttp.send("name=ClaireUnderwood&photoshoot=Portrait&country=USA");
+    });
+});
 
 /*----Auto-slide for images on the front page----*/
 /*=========================================================================================*/
