@@ -70,7 +70,6 @@ h6{
     font-family: GothamPro-Bold;
     font-size: 60px;
     color: white;
-    
 }
 
 /*----Intro block----*/
@@ -394,11 +393,11 @@ input[type=password], select, textarea {
 .selectBlock{
     margin-top: 6px;
     margin-bottom: 16px;
-    height: 50px;
+    height: 70px;
     background-color: white;
     box-sizing: border-box;
     font-family: GothamPro-Medium;
-    font-size: 25px;
+    font-size: 25px !important;
     border: 0.5px solid #dcdcdc;
     border-radius: 0px;
     -webkit-appearance: none;
@@ -499,4 +498,23 @@ canvas {
 
 @media (max-width: 767px) {
     footer .text-right { text-align:center }
+}
+
+
+
+.test1 {
+     display: flex;
+    justify-content: center;
+}
+
+#orderCompleted {
+    display: flex;
+  flex-direction: column;
+    justify-content: center;
+}
+
+#goBackButton {
+    
+    margin: 0 auto;
+    margin-top: 20px;
 }

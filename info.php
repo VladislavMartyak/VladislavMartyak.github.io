@@ -15,9 +15,21 @@
     <script src="https://unpkg.com/scrollreveal@4"></script>
     <script src="responsiveslides.min.js"></script>
 </head>
+<?php
+    $email = $password = "";
+    $email = test_input($_POST["email"]);
+    $password = test_input($_POST["password"]);
+    function test_input($data) {
+        $data = trim($data);
+        $data = stripslashes($data);
+        $data = htmlspecialchars($data);
+        return $data;
+    }
+    
+    ?>
 <body>
    <div id="navBarFixed">
-    <img class="navLogo" src="Logos/logoVM.png"/> 
+    <img class="navLogo" src="Logos/logoVM.png"/ style="margin-left:20px"> 
     <span id= "iconOpen"><i class="fas fa-bars" style="font-size:30px;color:black;padding-right: 25px;cursor: pointer"></i></span>
 </div>
 
@@ -27,7 +39,7 @@
    <a href="404.html">PORTRAIT</a>
    <a href="404.html">LIFESTYLE</a>
    <a href="404.html">FASHION</a>
-   <a href="order.html">ORDER</a>
+   <a href="order.php">ORDER</a>
    <a class="active" href="info.html" >INFO</a>
 </div>
    
@@ -42,14 +54,33 @@
     
     <div class="requestContainer">
     <div class="requestForm">
-       <form action="" method="get">
+       <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>"> 
         <h2>Do you want to track your order?</h2>
         <h3>Don't worry, cause there two options: I'm drinking my beer or  
         editing your pics. Just track in what status your pics are!</h3>
-        E-mail: <input type="text" class="inputField" id="fieldEmail" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.(?!ru)[a-z]{2,4}$"><br>
-        Password: <input type="password" class="inputField" id="fiedPassword" name="secondName" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*"><br>
-        <input type="submit" onClick="return empty()" class="sumbitButton" value="Track">
+        E-mail: <input type="text" class="inputField" id="fieldEmail" name="email" value="<?php echo $email;?>" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.(?!ru)[a-z]{2,4}$"><br>
+        Password: <input type="password" class="inputField" id="fiedPassword" name="password" value="<?php echo $password;?>"><br>
+        <input type="submit" id="submitOrderButton" class="sumbitButton" value="Submit"> 
         </form>
+         <?php
+            $mysqli = new mysqli("localhost", "root2", "", "MRTKBase");
+            $mysqli->query ("SET NAMES 'utf8'");
+            $result = $mysqli->query("SELECT * FROM `clientsOrdersTrack` WHERE `email` LIKE '{$email}' AND `password` LIKE '{$password}'");
+            $row = $result->fetch_assoc();
+            $statusServer = $row["status"];
+            $firstNameServer = $row["firstName"];
+            if($statusServer != ""){
+                echo "<h2><br>TRACKED:</h2>";
+                echo  "<h3>Hi, $firstNameServer! What a beautiful day is today,<br>isn't it? Hope you are enjoing it.<br><br>Status: $statusServer</h3>";
+                echo "<h3>Have a great time!</h3>";
+            }
+            else{
+                echo "<h2><br>Could not be tracked!</h2>";
+                echo "<h3>Sorry, but it seems like you didn't ordered a photoshoot or you typed in wrong data. </h3>";
+                echo "<h3>Please try again!</h3>";
+            }
+            $mysqli->close()
+           ?>
         
         <h4> </h4>
         

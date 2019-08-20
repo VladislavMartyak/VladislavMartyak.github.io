@@ -45,61 +45,6 @@ $(window).scroll(function(){
 });
 
 
-/*----JQuery Ajax request using GET & POSTmethod----*/
-/*=========================================================================================*/
-$(document).ready(function(){
-    $("#submitButton").click(function(){
-        $.get("test_get_jquery.asp", function(data, status){
-            alert("Text: " + data + "\nStatus: " + status);
-        });
-    });
-});
-
-$(document).ready(function(){
-    $("#submitButton").click(function(){
-        $.post("test_post_jquery.asp",
-            {
-            name: "Claire Underwood",
-            photoshoot: "Portrait",
-            country: "USA"
-            },
-        function(data,status){
-            alert("Data: " + data + "\nStatus: " + status);
-    });
-    });
-});
-
-/*----XML Ajax request using GET & POSTmethod----*/
-/*=========================================================================================*/
-$(document).ready(function(){
-    $("#submitButton").click(function(){
-        var xhttp = new XMLHttpRequest();
-        xhttp.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200){
-            document.getElementById("demo").innerHTML =
-            this.responseText;
-            }
-        };
-        xhttp.open("GET", "test_get_xml.txt", true);
-        xhttp.send();
-    });
-});
-
-
-$(document).ready(function(){
-    $("#submitButton").click(function(){
-        var xhttp = new XMLHttpRequest();
-        xhttp.onreadystatechange = function() {
-            if (this.readyState == 4 && this.status == 200) {
-                document.getElementById("test_post_asp_el").innerHTML = this.responseText;
-            }
-        };
-        xhttp.open("POST", "test_post_xml.asp", true);
-        xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-        xhttp.send("name=ClaireUnderwood&photoshoot=Portrait&country=USA");
-    });
-});
-
 /*----Auto-slide for images on the front page----*/
 /*=========================================================================================*/
 
@@ -177,39 +122,4 @@ $(function() {
         random: true
     });
   });
-
-
-/*----Check if user missed some lines----*/
-/*=========================================================================================*/
-
-/*
-function empty(){
-    alert("Hello");
-    var textFirstName = document.getElementById("fieldFirstName").value;
-    var textEmail = document.getElementById("fieldEmail").value;
-    var textPhoneNumber = document.getElementById("fieldPhoneNumber").value;
-    var textSecondName = document.getElementById("fieldSecondName").value;
-    if (textFirstName == "" && textSecondName == "" && textPhoneNumber == "" && textEmail == "") {
-        alert("Enter text in all the fields!");
-        return false;
-    };
-    if (textFirstName == "") {
-        alert("Enter text in field 'First Name'");
-        return false;
-    }; 
-    if (textSecondName == "") {
-        alert("Enter text in field 'Second Name'");
-        return false;
-    }; 
-    if (textPhoneNumber == "") {
-        alert("Enter text in field 'Phone Number'");
-        return false;
-    };
-    if (textEmail == "") {
-        alert("Enter text in field 'E-mail'");
-        return false;
-    };
-}*/
-
-
 
