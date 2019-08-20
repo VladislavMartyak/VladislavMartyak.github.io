@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Order</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous"> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal@4"></script>
+    <script src="responsiveslides.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery-3.4.0.min.js"></script>  
+</head>
+<body>
+   <div id="navBarFixed">
+    <img class="navLogo" src="Logos/logoVM.png"/> 
+    <span id= "iconOpen"><i class="fas fa-bars" style="font-size:30px;color:black;padding-right: 25px;cursor: pointer"></i></span>
+</div>
+
+<div id="mySidenav" class="sidenav">
+   <a href="javascript:void(0)" id="iconClose" class="closebtn" onclick="closeNav()">&times;</a>
+   <a href="index.html">OVERVIEW</a>
+   <a href="404.html">PORTRAIT</a>
+   <a href="404.html">LIFESTYLE</a>
+   <a href="404.html">FASHION</a>
+   <a class="active" href="order.html">ORDER</a>
+   <a href="info.html">INFO</a>
+</div>
+    <h1>Request a photoshoot<br></h1>
+    <div class="requestContainer">
+    <div class="requestForm">
+       <form action="" method="get">
+        First name: <input type="text" class="inputField" id="fieldFirstName" name="firstName" pattern="[A-Za-z]{4,}"><br>
+        Second name: <input type="text" class="inputField" id="fieldSecondName" name="secondName" pattern="[A-Za-z]{4,}"><br>
+        Phone number: <input type="text" class="inputField" id="fieldPhoneNumber" name="phoneNumber" pattern="[0-9]{10}"><br>
+        E-mail: <input type="text" class="inputField" id="fieldEmail" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.(?!ru)[a-z]{2,4}$"><br>
+        Country: <br>
+        <select class="selectBlock">
+        <option selected disabled>Choose your country</option>
+        <option value="AU">Austria</option>
+        <option value="PL">Poland</option>
+        <option value="UA">Ukraine</option>
+        <option value="DE">Germany</option>
+        <option value="UK">United Kingdom</option>
+        <option value="US">United States</option>
+        </select>
+        Use: <br> 
+        <label class="container">Commercial
+            <input type="radio" checked="checked" name="radio" value="Commerical">
+            <span class="checkmark"></span>
+        </label>
+        <label class="container">Personal
+            <input type="radio" name="radio" value="Personal">
+            <span class="checkmark"></span>
+        </label>
+        <label class="container">Custom
+            <input type="radio" name="radio" value="Custom">    
+            <span class="checkmark"></span>
+        </label>
+        Additional stuff: <br>
+        <label class="container">Prints
+            <input type="checkbox" name="check" value="Prints">
+            <span class="checkmark"></span>
+        </label>
+        <label class="container">Digital copies
+            <input type="checkbox" name="check" value="DigitalCopies">
+            <span class="checkmark"></span>
+        </label>
+        <label class="container">Model Release
+            <input type="checkbox" name="check" value="ModelRelease">    
+            <span class="checkmark"></span>
+        </label>   
+        
+<!--        <input type="submit" id="submitButton" onClick="return empty()" class="sumbitButton" value="Submit"> -->
+        </form>
+        <p id="submitButton" onClick="return empty()" class="sumbitButton" >Submit</p>
+        </div>
+    </div>
+    <button id="myb">Send an HTTP GET request to a page and get the result back</button>
+   
+<div class="footer">
+    <div class="footerContent container-fluid">
+        <div class="container-fluid col-lg-6 col-md-5 col-sm-6 col-6" style="padding-left: 0px; font-size: 30px"><h1>ALWAYS CREATE</h1></div>
+        <div class="container-fluid col-lg-6 col-md-5 col-sm-6 col-6">
+            <div class="socialLinks">
+                <a class="socialLink" href="https://www.instagram.com/vladislavmartyak/" target="_blank" title="Instagram"><i class="fab fa-instagram" style="font-size:20px;color:white; padding-right:10px;"></i></a>
+                <a class="socialLink" href="https://www.facebook.com/VladislavMartyak" target="_blank" title="Facebook"><i class="fab fa-facebook-square" style="font-size:20px;color:white; padding-right:10px;"></i></a>
+                <a class="socialLink" href="https://t.me/vladislavmartyak" target="_blank" title="Telegram"><i class="fab fa-telegram-plane" style="font-size:20px;color:white; padding-right:10px;"></i></a>
+        </div>
+        <p1>#2019 Vladislav Martyak</p1>
+        </div>
+    </div>
+</div>
+
+</body>
+<script src="script.js"> </script>
+<script src="script2.js"> </script>
+</html>
