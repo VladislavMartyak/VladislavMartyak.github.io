@@ -5,7 +5,7 @@ This is a website-portfolio for showcasing photoshoots and an easy communication
 * Full form for order of photoshoot
 * Database with clients and means to track the status of photoshoot
 * Automated slideshow on main page
-* Chart with an amount of plients per month
+* Chart with an amount of сlients per month
 * Auto-generated password for each client
 * Mobile-friendly
 ## What's not done 🥺
